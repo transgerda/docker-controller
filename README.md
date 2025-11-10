@@ -33,7 +33,7 @@ docker compose down
 
 ## Example request
 ```bash
-curl -X POST http://host:3333/start \
+curl -X POST http://{host}:3333/start \
   -H "Content-Type: application/json" \
   -H "x-api-key: {your-api-key}" \
   -d '{"nameOrId":"{container-name-or-id}"}'
