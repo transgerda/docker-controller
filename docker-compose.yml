@@ -1,0 +1,13 @@
+services:
+  controller:
+    build: .
+    container_name: docker-controller
+    ports:
+      - "3333:3333"
+    env_file: ".env"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - ALLOWED_CONTAINERS=minecraft-server,minecraft-rlcraft-server,minecraft-test-server
+    restart: unless-stopped
+

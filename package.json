@@ -1,0 +1,15 @@
+{
+  "name": "docker-api",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cron": "^4.3.4",
+    "dockerode": "^4.0.2",
+    "dotenv": "^17.2.3",
+    "express": "^4.19.2"
+  }
+}
