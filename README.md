@@ -17,25 +17,21 @@ docker compose up -d
 >[!IMPORTANT]
 >The containers which are controller by this application should be started with `docker start {container}` and stopped with `docker stop {container}`. If used for example `docker compose down` then this application won't work correctly.
 
-### Stopping a docker container
-```bash
-http://{host}:3333/stop
-```
-
-### Stopping a docker container
-```bash
-http://{host}:3333/stop
-```
-
-### Stopping the controller 
-```bash
-docker compose down
-```
-
-## Example request
+### Starting a docker container
 ```bash
 curl -X POST http://{host}:3333/start \
   -H "Content-Type: application/json" \
   -H "x-api-key: {your-api-key}" \
   -d '{"nameOrId":"{container-name-or-id}"}'
 ```
+
+### Stopping the controller 
+```bash
+curl -X POST http://{host}:3333/stop \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: {your-api-key}" \
+  -d '{"nameOrId":"{container-name-or-id}"}'
+```
+
+>[!NOTE]
+>These examples are done with curl but you can of course use any other request method for example fetch in nodejs.
