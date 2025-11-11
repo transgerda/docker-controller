@@ -4,6 +4,7 @@
 This application can be installed like this:
 ```bash
 git clone https://github.com/transgerda/docker-controller.git
+cd docker-controller
 docker compose up -d
 ```
 
