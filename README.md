@@ -1,7 +1,7 @@
 # docker-controller
 
 ## Installation
-This application can be installed like this:
+This application can be installed like this. Make sure docker is correctly installed.
 ```bash
 git clone https://github.com/transgerda/docker-controller.git
 cd docker-controller
